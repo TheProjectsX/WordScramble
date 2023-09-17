@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Word Scramble</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="words.js"></script>
     <script src="script.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-
-        <h1>Word Scramble</h1>
-        <div class="gameContainer">
-
-            <div class="scrambleWord">
-                <p id="scrambledWord">&nbsp;&nbsp;</p>
-            </div>
-
-            <div class="hints">
-                <p>Hint: <span id="hint">&nbsp;&nbsp;r</span></p>
-            </div>
-
-            <div class="countDown">
-                <p>Time Left: <span id="timeLeft">30</span>s</p>
-            </div>
-
-            <div class="answer">
-                <input type="text" name="answer" id="answer" placeholder="Guess a Valid Word">
-
-                <div class="buttons">
-                    <button id="refresh">Refresh</button>
-                    <button id="check">Check</button>
-                </div>
-            </div>
-
+      <h1>Word Scramble</h1>
+      <div class="gameContainer">
+        <div class="scrambleWord">
+          <p id="scrambledWord">&nbsp;&nbsp;</p>
         </div>
 
-    </div>
-</body>
+        <div class="hints">
+          <p>Hint: <span id="hint">&nbsp;&nbsp;r</span></p>
+        </div>
 
+        <div class="countDown">
+          <p>Time Left: <span id="timeLeft">30</span>s</p>
+        </div>
+
+        <div class="answer">
+          <input
+            required
+            type="text"
+            name="answer"
+            id="answer"
+            placeholder="Guess a Valid Word"
+          />
+
+          <div class="buttons">
+            <button id="refresh">Refresh</button>
+            <button id="check">Check</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
